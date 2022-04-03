@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<!-- message를 받아오고 searchUrl로 이동함 (message 출력내용과 searchrul의 경로는 controller에서 설정함) -->
+<script th:inline="javascript">
+    /*<![CDATA[*/
+
+    var message = [[${message}]];
+    alert(message);
+
+    location.replace([[${searchUrl}]]);
+
+    /*]]>*/
+</script>
+
+<body>
+
+</body>
+</html>
